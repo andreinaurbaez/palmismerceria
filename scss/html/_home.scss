@@ -1,0 +1,265 @@
+
+@import "../utils/variables";
+
+@import "../utils/mixin";
+
+// bloque body
+body{
+    background-color: #d440dc5d;
+    font-family: 'Blinker', sans-serif;
+    
+}
+ // header principal
+ /* header princial*/
+h1{
+    width: 100%;
+    height: 20px;
+    text-align-last: center;
+    font-size: 20px;
+    position: static;
+}
+
+nav{
+    background-color: #808080;
+    font-size: 30px;
+    img{
+       border-radius: 50px; 
+    }
+}
+
+.redessociales{
+    @include flex;
+     a{
+        color: $color-principal;
+        display:flex;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        width: 40px;
+        height: 40px;
+        background: $color-terciario;
+        border-radius: 100%;
+        text-decoration: none;
+
+     }
+
+}
+
+.carousel-inner{
+    max-height: 39rem;
+}  
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: center;
+        img{
+            width: 220px;
+            height: 200px;
+            margin-top: 30px;
+        
+        }
+}
+
+.caja{
+    box-shadow: 0px 10px 20px rgba(0,0,0,20);
+    margin: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    &:hover img{
+        transform: scale(1.2);
+    
+    }
+}
+
+
+.caja p{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+
+.nav-item a{
+    font-size: 30px;
+ }
+
+div a{
+    display: inline-block;
+}
+
+
+/* formulario*/
+form{
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background: rgba(24, 23, 24, 0.802);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 30px;
+    h2{
+        color: aliceblue; 
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+        
+     }
+}
+
+input ,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+}
+
+#boton{
+    background: rgba(16, 16, 16, 0.769);
+    color: $color-terciario;
+    padding: 20px;
+}
+
+
+/* productos destacados*/
+.today-special{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+  
+   
+}
+
+.group__title{
+    width:100%;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 1.8em;
+    margin: 0px;
+    color: black;
+    font-weight: bolder;
+    background-color: dimgray;
+
+}
+.today-special__img{
+    margin: auto;
+    max-width: 350px;
+    
+   
+}
+
+.column .destacado{
+    width: 220px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.column img{
+    box-shadow: 0px 10px 20px rgba(0,0,0,20);
+}
+.column:hover img{
+    transform: scale(1.2);
+}
+.today-special__title{
+   font-size: 1.3em;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   font-weight: bolder;
+   text-align: center;
+
+}
+.today-special__price{
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+
+}
+
+
+/* pie pagina*/
+footer{
+    background: rgba(128, 128, 128, 0.682);
+    height: 50%;
+    width: 100vw;
+    padding-top: 10 10px;
+    color: $color-terciario;
+   
+    
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3em;
+        color: black;
+        p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 20px;
+        }
+    }
+}
+
+.socials{
+    list-style: none;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    li{
+        margin: 0 10px;
+        a{
+            text-decoration: none;
+            color: $color-principal;
+            i{
+                font-size: 1.1rem;
+                transition: color .4s ease;
+                 &:hover i{
+                    color: blue;
+               }
+            }
+    }
+}
+ 
+}
+
+.footer-bottom{
+    background: rgb(38, 36, 36);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    p{
+        font-size: 20px;
+        color: rgb(234, 232, 232);
+        font-weight: bold;
+        word-spacing: 2px;
+        text-transform: capitalize;
+   }
+
+ }
+
+
