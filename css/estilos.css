@@ -9,7 +9,6 @@ html {
 
 body {
   background-color: #d440dc5d;
-  font-size: 16px;
   font-family: 'Blinker', sans-serif; }
 
 /* header princial*/
@@ -22,7 +21,7 @@ h1 {
   position: sticky; }
 
 nav {
-  background-color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(#fefefe);
   font-size: 30px;
  }
 .nav-item a{
@@ -41,7 +40,7 @@ nav {
  max-width: 100%;
  height: 200px;
  object-fit: cover;
- border-radius: 10px 10px 0 0;
+ border-radius: 10px;
  transition: all .5s;
 
  }
@@ -90,20 +89,23 @@ nav {
 }
 /* formulario*/
 form {
-  width: 450px;
-  height: 500px;
-  margin: auto;
+  width: 400px;
+  margin: auto; 
   background: rgba(24, 23, 24, 0.802);
   padding: 10px 20px;
+  overflow: hidden;
   box-sizing: border-box;
   margin-top: 30px;
-  border-radius: 30px; }
-  form h2 {
-    color: aliceblue;
-    text-align: center;
-    margin: 0;
-    font-size: 30px;
-    margin-bottom: 20px; }
+  border-radius: 30px;
+  background-attachment: fixed; 
+ }
+form h2 {
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+ }
 
 input, textarea {
   width: 100%;
@@ -111,15 +113,46 @@ input, textarea {
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px; }
-  input textarea, textarea textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%; }
-
+  
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+ }
 #boton {
   background: rgba(16, 16, 16, 0.769);
   color: white;
   padding: 20px; }
+
+@media (max-width:600px){
+  form{
+    width: 100%;
+  
+  }
+}
+
+.mapa{
+  margin: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+
+}
+.mapa iframe{
+  width: 100%;
+  height: 400px;
+}
+.mapa iframe{
+  height: 300px;
+}
+
+@media (max-width:768px){
+  .mapa{
+    margin: 10px;
+    padding: 5px;
+  
+  }
+}
 
 /* productos destacados*/
 .today-special {
