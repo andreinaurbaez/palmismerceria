@@ -22,7 +22,7 @@ h1 {
   position: sticky; }
 
 nav {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.856);
   font-size: 30px;
  }
 .nav-item a{
@@ -186,17 +186,17 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center; }
-  .footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3em;
-    color: black; }
-    .footer-content h3 p {
-      max-width: 500px;
-      margin: 10px auto;
-      line-height: 28px;
-      font-size: 20px; }
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3em;
+  color: black; }
+.footer-content h3 p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 20px; }
 
 .socials {
   list-style: none;
@@ -204,20 +204,20 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 1rem 0 3rem 0; }
-  .socials li {
-    margin: 0 10px; }
-    .socials li a {
-      text-decoration: none;
-      color: #000000; }
-      .socials li a i {
-        font-size: 1.1rem;
-        transition: color .4s ease; }
-        .socials li a i:hover i {
-          color: blue; }
+.socials li {
+  margin: 0 10px; }
+.socials li a {
+  text-decoration: none;
+  color: #000000; }
+.socials li a i {
+  font-size: 1.1rem;
+  transition: color .4s ease; }
+.socials li a i:hover i {
+  color: blue; }
 
 .footer-bottom {
-  background: #262424;
   width: 100%;
+  background: #262424;
   padding: 20px 0;
   text-align: center; }
   .footer-bottom p {
