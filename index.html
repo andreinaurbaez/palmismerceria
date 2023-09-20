@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&display=swap">
   <title>Merceria Palmis-Suministros de Costura y Manualidades.</title><!--titulo de la pestaña-->
-  <meta name="description" content= tienda en linea de merceria con una amplia seleccion de agujas,tijeras,lanas,hilos,elasticos y otros suministros de costura y tejido de alta calidad.encuentra todo lo que necesitas para tus proyectos y manualidades.>
+  <meta name="description" content= "tienda en linea de merceria con una amplia seleccion de agujas,tijeras,lanas,hilos,elasticos y otros suministros de costura y tejido de alta calidad.encuentra todo lo que necesitas para tus proyectos y manualidades">
 </head>
 
 
@@ -26,16 +26,17 @@
   <header id="principal"> <!--encabezado-->
     <h1>Palmis Merceria,tu tienda Online</h1>
   <!--todo el sitio.el cuerpo del sitio.lo visible-->
-  <nav class="navbar navbar-expand-md navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="multimedia/imagenportada.jpg" alt="logo" width="100px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLateral" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLateral" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
          <!--elementos del menu colapsable-->
       <div class="collapse navbar-collapse" id="menuLateral">
         <ul class="navbar-nav me-auto">
+
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Inicio</a>
           </li>
@@ -60,36 +61,38 @@
         <a target="_blank" href="https://instagram.com/palmismerceria?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram"></i></a></li>
         <li class="nav-item col-3 col-md-auto p-3">
         <a target="_blank" href="https://wa.me/message/TW2VJY55WLXMG1"><i class="fab fa-whatsapp"></i></a></li>
-      </div> 
-    </div>
+      </ul> 
+    </div> 
+   </div>
   </nav>
 </header>  
-  <!-- slider de imagenes-->
 
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-
       <div class="carousel-item active" data-bs-interval="2000">
         <img src="./multimedia/portada1.jpg" class="d-block w-100" alt="portada1">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="2000">
         <img src="./multimedia/portada 2.jpg" class="d-block w-100" alt="portada2">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="2000">
         <img src="./multimedia/portada3.jpg" class="d-block w-100" alt="portada3">
       </div>
-    </div>
-  </div>
-    <button class="carousel-control-prev" type="button"     data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+   </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
- </div>
+      <span class="visually-hidden">previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">next</span>
+  </button>
+</div>
 <!--producto destacado-->
 
 <section class="today-special">
   <h2 class="group__title">Productos Destacados</h2>
- <div class="container">
   <div class="column">
     <img src="./multimedia/sticker1.jpg" alt="" class="destacado">
   <div class="today-special__title"> stickers Acrilicos</div>
